@@ -1,10 +1,3 @@
 <template>
-  <StoryblokComponent v-if="story" :blok="story.content" />
+  <ContentLayout />
 </template>
-
-<script setup>
-const route = useRoute();
-const story = await useAsyncStoryblok('/' + route.params.contentslug, {
-  version: 'draft',
-});
-</script>
