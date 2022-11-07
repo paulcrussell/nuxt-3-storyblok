@@ -17,6 +17,8 @@
     "nuxt": "^3.0.0-rc.12"
   },
   "dependencies": {
-    "axios": "^0.27.2"
+    "@storyblok/vue": "^6.3.2",
+    "axios": "^0.27.2",
+    "storyblok-js-client": "^5.0.4"
   }
 }
