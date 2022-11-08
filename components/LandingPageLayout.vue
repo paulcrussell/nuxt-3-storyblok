@@ -13,8 +13,11 @@
 </template>
 
 <script setup>
+import BaseLayout from './BaseLayout.vue';
+const props = defineProps(['slug']);
+
 const route = useRoute();
-const story = await useAsyncStoryblok('/' + route.params.categoryslug, {
+const story = await useAsyncStoryblok(props.slug, {
   version: 'draft',
 });
 </script>

@@ -1,8 +1,8 @@
 <template>
-  <ProductLayout />
+  <LandingPageLayout :slug="slug" />
 </template>
 
 <script setup>
 const route = useRoute();
-const slug = '/' + route.params.productslug;
+const slug = '/landing';
 </script>
